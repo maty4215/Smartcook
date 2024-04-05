@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Substitle */
+
+.subtitle{
+    margin: 3rem 4rem 0 4rem;
+    border-bottom: 1px solid black;
+}
+
+.subtitle > h1{
+    font-weight: 600;
+}
+
+
+/* Filters */
+
+.upper-menu{
+    display: flex;
+    margin: 3rem 0rem 4rem 4rem;
+    font-size: 1rem;
+}
+
+.dropdown button{
+    margin: 10px;
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.144);
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    text-decoration: underline;
+}
+
+.dropdown a:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+/* Recipes */
+
+.recipes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.recipe > img{
+    height: 20rem;
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.recipe > img:hover{
+    filter: brightness(95%);
+}
+
+
+.recipe a p img{
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+}
+
+.recipes > a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+.recipes > a > .name{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown > button > svg{
+    height: 1rem;
+    margin: 0 0 2px 1px;
+}
+
+@media (max-width: 60em ) {
+    .subtitle{
+        text-align: center;
+    }
+
+    .upper-menu{
+        display: flex;
+        margin: 3rem 0em 4rem 0rem;
+        font-size: 1rem;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1696px) {
+    .recipes{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    .subtitle h1{
+        font-size: 4em;
+    }
+
+    .dropdown button{
+        margin: 10px;
+        font-size: 1.5rem;
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+    }
+    
+}
+
+@media (min-width: 1792px) {
+    .recipe > img{
+        height: 30rem;
+        width: 35rem;
+        border-radius: 1rem;
+    }
+}
+
+@media (min-width: 2560px) {
+
+    .recipe > img{
+        height: 35rem;
+        width: 40rem;
+        border-radius: 1rem;
+    }
+}
