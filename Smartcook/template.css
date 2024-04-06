@@ -80,13 +80,6 @@
     filter: brightness(95%);
 }
 
-
-.recipe a p img{
-    height: 10rem;
-    width: 10rem;
-    border: 1px solid black;
-}
-
 .recipes > a{
     color: black;
     text-decoration: none;
