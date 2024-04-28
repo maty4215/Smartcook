@@ -1,3 +1,3 @@
 # Smartcook
 
-## Stránka recipe ještě není funkční s API. Bude opraveno co nedříve ;)
+### Stránka recipe ještě není funkční s API. Bude opraveno co nedříve ;)
